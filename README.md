@@ -1,9 +1,7 @@
 
 # Project Title
 
-A brief description of what this project does and who it's for
-
-# Crypto Currency Website
+Crypto Currency Website
 
 This is a cryptocurrency website built using React. It provides information and data visualization for various cryptocurrencies.
 
