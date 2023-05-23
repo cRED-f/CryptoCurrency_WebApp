@@ -23,13 +23,11 @@ function App(): JSX.Element {
   );
 }
 
-function NavbarHandler(): React.ReactNode {
+function NavbarHandler(): JSX.Element | null {
   const location = useLocation();
 
-  // Check if the current route is the homepage ("/")
   const isHomepage = location.pathname === "/";
 
-  // Render the Header component only if it's not the homepage
   return !isHomepage ? <Header /> : null;
 }
 
