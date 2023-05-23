@@ -1,0 +1,69 @@
+# Crypto Currency Website
+
+This is a cryptocurrency website built using React. It provides information and data visualization for various cryptocurrencies.
+
+## Features
+
+- Display real-time data for cryptocurrencies using Chart.js
+- Fetch cryptocurrency data from an API using Axios
+- Use React Router for navigation between different pages
+- Utilize React Icons for adding icons to the UI
+- Built with Tailwind CSS and DaisyUI for responsive and customizable styling
+
+## Dependencies
+
+- axios: ^1.4.0
+- chart.js: ^4.3.0
+- daisyui: ^2.51.6
+- react: ^18.2.0
+- react-chartjs-2: ^5.2.0
+- react-dom: ^18.2.0
+- react-icons: ^4.8.0
+- react-router-dom: ^6.11.2
+
+## Development Dependencies
+
+- @types/react: ^18.0.28
+- @types/react-dom: ^18.0.11
+- @typescript-eslint/eslint-plugin: ^5.57.1
+- @typescript-eslint/parser: ^5.57.1
+- @vitejs/plugin-react: ^4.0.0
+- autoprefixer: ^10.4.14
+- eslint: ^8.38.0
+- eslint-plugin-react-hooks: ^4.6.0
+- eslint-plugin-react-refresh: ^0.3.4
+- postcss: ^8.4.23
+- tailwindcss: ^3.3.2
+- typescript: ^5.0.2
+- vite: ^4.3.2
+
+## Installation
+
+1. Clone the repository:
+
+git clone https://github.com/cRED-f/CryptoCurrency_WebApp.git
+
+2. Navigate to the project directory:
+
+cd crypto-website
+
+
+3. Install the dependencies:
+
+npm install
+
+
+4. Start the development server:
+
+npm run dev
+
+
+
+5. Open your browser and visit  to see the website in action.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
+
+
+

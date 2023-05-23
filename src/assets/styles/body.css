@@ -1,0 +1,6 @@
+.body-elements{
+  width:80%;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+}

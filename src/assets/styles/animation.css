@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Titan+One");
+
+body {
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: moveUpDown 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+  }
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2fa00;
+  font-family: "Titan One", cursive;
+  font-size: 90px;
+  font-weight: 700;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+h1 span {
+  position: relative;
+}
+
+h1 span:before {
+  background: linear-gradient(45deg, #fc5c7d, #6a82fb, #fc5c7d);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: "";
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: "Tahoma", sans-serif;
+  font-size: 60px; /* Increase the font size as desired */
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 250px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 250px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 300px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 300px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+  98% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 70px;
+  border: none;
+  outline: none;
+  color: #000;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:hover {
+  color: #000;
+}
+
+.glow-on-hover:hover:after {
+  background: transparent;
+}
+
+.glow-on-hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f2fa00;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
