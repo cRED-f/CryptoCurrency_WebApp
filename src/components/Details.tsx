@@ -75,6 +75,7 @@ function Details() {
         const { data: chartData } = await axios.get<CoinsData>(
           `${server}/coins/${id}/market_chart?vs_currency=${currency}&days=${days}`
         );
+        console.log(coin);
         setCoin(data);
         setChartArr(chartData.prices);
         setTimeout(() => {
